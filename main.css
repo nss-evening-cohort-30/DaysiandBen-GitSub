@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(0, 0, 83);
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Turret Road", serif;
+  font-weight: 400;
+  border: 1px solid red;
+  width: 20%;
+  margin-left: 20px;
+}
+
+#profImg {
+  border-radius: 50%;
+}
+
+#bio {
+  color: white;
+  margin-top: 50px;
+}
+
+#location {
+  color: white;
+  margin-top: 20px;
+}
+
+#highlights {
+  color: white;
+  margin-top: 20px;
+}
+
+#organizations {
+  color:white;
+  margin-top: 20px;
+}
+
+#sponsors {
+color: white;
+margin-top: 20px;
+}
+
+.sponsor {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+#navTab {
+  display: flex;
+  flex-direction: column;
+  align-content:space-around;
+  border: 1px solid red;
+  width:70%;
+  margin-left: 21.5%; 
+   position: fixed;
+  top: 0; 
+}
