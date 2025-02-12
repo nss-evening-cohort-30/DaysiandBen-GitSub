@@ -1,120 +1,104 @@
 let repos = [
   {
-    id:1,
-    name: 'Repo1',
-    description: 'Here is a description of my repo',
-    language: 'Javascript',
-    keywords: [
-      'Javascript',
-      'React',
-      'Hackerthon'
-    ],
+    id: 1,
+    name: "Repo1",
+    description: "Here is a description of my repo",
+    language: "Javascript",
+    keywords: ["Javascript", "React", "Hackerthon"],
     pinned: true,
-    type: 'repository'
+    type: "repository",
   },
   {
-    id:2,
-    name: 'Repo1',
-    description: 'Here is a description of my repo',
-    language: 'Javascript',
-    keywords: [
-      'Javascript',
-      'React',
-      'Hackerthon'
-    ],
+    id: 2,
+    name: "Repo2",
+    description: "Here is a description of my repo",
+    language: "Javascript",
+    keywords: ["Javascript", "React", "Hackerthon"],
     pinned: true,
-    type: 'repository'
+    type: "repository",
   },
   {
-    id:3,
-    name: 'Repo1',
-    description: 'Here is a description of my repo',
-    language: 'Javascript',
-    keywords: [
-      'Javascript',
-      'React',
-      'Hackerthon'
-    ],
+    id: 3,
+    name: "Repo3",
+    description: "Here is a description of my repo",
+    language: "Javascript",
+    keywords: ["Javascript", "React", "Hackerthon"],
     pinned: true,
-    type: 'repository'
+    type: "repository",
   },
   {
-    id:4,
-    name: 'Repo1',
-    description: 'Here is a description of my repo',
-    language: 'Javascript',
-    keywords: [
-      'Javascript',
-      'React',
-      'Hackerthon'
-    ],
+    id: 4,
+    name: "Repo4",
+    description: "Here is a description of my repo",
+    language: "Javascript",
+    keywords: ["Javascript", "React", "Hackerthon"],
     pinned: true,
-    type: 'repository'
-  }
-]
+    type: "repository",
+  },
+];
 
 let projects = [
   {
     id: 1,
-    name: 'Project1',
-    description: 'Here is a description',
-    type: 'project'
+    name: "Project1",
+    description: "Here is a description",
+    type: "project",
   },
   {
     id: 2,
-    name: 'Project1',
-    description: 'Here is a description',
-
+    name: "Project1",
+    description: "Here is a description",
+    type: "project",
   },
   {
     id: 3,
-    name: 'Project1',
-    description: 'Here is a description',
-     type: 'project'
+    name: "Project1",
+    description: "Here is a description",
+    type: "project",
   },
   {
     id: 4,
-    name: 'Project1',
-    description: 'Here is a description',
-     type: 'project'
+    name: "Project1",
+    description: "Here is a description",
+    type: "project",
   },
   {
     id: 5,
-    name: 'Project1',
-    description: 'Here is a description',
-     type: 'project'
-  }
-]
+    name: "Project1",
+    description: "Here is a description",
+    type: "project",
+  },
+];
 
 let packages = [
   {
-    id:1,
+    id: 1,
     name: "Package1",
     description: "Here is a description",
-    linkUrl: 'www.website.com',
-    type: 'package'
+    linkUrl: "www.website.com",
+    type: "package",
   },
   {
-    id:1,
+    id: 1,
     name: "Package1",
     description: "Here is a description",
-    linkUrl: 'www.website.com',
-    type: 'package'
+    linkUrl: "www.website.com",
+    type: "package",
   },
   {
-    id:1,
+    id: 1,
     name: "Package1",
     description: "Here is a description",
-    linkUrl: 'www.website.com',
-    type: 'package'
+    linkUrl: "www.website.com",
+    type: "package",
   },
   {
-    id:1,
+    id: 1,
     name: "Package1",
     description: "Here is a description",
-    linkUrl: 'www.website.com',
-    type: 'package'
-  }
-]
+    linkUrl: "www.website.com",
+    type: "package",
+  },
+];
 
-export { repos, projects, packages}
+export { repos, projects, packages };
