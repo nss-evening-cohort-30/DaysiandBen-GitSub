@@ -75,3 +75,5 @@ document.addEventListener("DOMContentLoaded", () => {
   displayCards(repos);
   // displayProjects(projects);
 });
+
+export{ displayInDom }
