@@ -46,24 +46,24 @@ let projects = [
   },
   {
     id: 2,
-    name: "Project1",
+    name: "Project2",
     description: "Here is a description",
   },
   {
     id: 3,
-    name: "Project1",
+    name: "Project3",
     description: "Here is a description",
     type: "project",
   },
   {
     id: 4,
-    name: "Project1",
+    name: "Project4",
     description: "Here is a description",
     type: "project",
   },
   {
     id: 5,
-    name: "Project1",
+    name: "Project5",
     description: "Here is a description",
     type: "project",
   },
