@@ -1,8 +1,8 @@
 let repos = [
   {
     id: 1,
-    name: "Repo1",
-    description: "Here is a description of my repo",
+    name: "Time Space Station",
+    description: "First candies in the moon",
     language: "Javascript",
     keywords: ["Javascript", "React", "Hackerthon"],
     pinned: true,
@@ -10,8 +10,8 @@ let repos = [
   },
   {
     id: 2,
-    name: "Repo2",
-    description: "Here is a description of my repo",
+    name: "The Art of Stretchy Living: A Guide to Being Flexible",
+    description: "Jake teaches flex box",
     language: "Javascript",
     keywords: ["Javascript", "React", "Hackerthon"],
     pinned: true,
@@ -19,8 +19,8 @@ let repos = [
   },
   {
     id: 3,
-    name: "Repo3",
-    description: "Here is a description of my repo",
+    name: "Adventures with Finn and Jake",
+    description: "to do list in the land of Ooo",
     language: "Javascript",
     keywords: ["Javascript", "React", "Hackerthon"],
     pinned: true,
@@ -28,8 +28,8 @@ let repos = [
   },
   {
     id: 4,
-    name: "Repo4",
-    description: "Here is a description of my repo",
+    name: "Gumball Machine",
+    description: "Here is a collection of Gumball Guardians",
     language: "Javascript",
     keywords: ["Javascript", "React", "Hackerthon"],
     pinned: true,
@@ -40,14 +40,14 @@ let repos = [
 let projects = [
   {
     id: 1,
-    name: "Project1",
-    description: "Here is a description",
+    name: "Candy Clone Lab",
+    description: "Clone your own candy",
     type: "project",
   },
   {
     id: 2,
-    name: "Project2",
-    description: "Here is a description",
+    name: "Candy Cyber Attacks",
+    description: "mysterious sugar trails",
   },
   {
     id: 3,
@@ -57,14 +57,14 @@ let projects = [
   },
   {
     id: 4,
-    name: "Project4",
-    description: "Here is a description",
+    name: "Castle reconstruction",
+    description: "Rebuild castle from foundations",
     type: "project",
   },
   {
     id: 5,
-    name: "Project5",
-    description: "Here is a description",
+    name: "Sugar Meltdown",
+    description: "Response Plan against the ice King",
     type: "project",
   },
 ];
@@ -72,29 +72,29 @@ let projects = [
 let packages = [
   {
     id: 1,
-    name: "Package1",
-    description: "Here is a description",
+    name: "Peppermint Butler Pack",
+    description: "Dark Arts from the best in all Ooo",
     linkUrl: "www.website.com",
     type: "package",
   },
   {
     id: 1,
-    name: "Package1",
-    description: "Here is a description",
+    name: "Cupcake Pack",
+    description: "Alliance against ice King",
     linkUrl: "www.website.com",
     type: "package",
   },
   {
     id: 1,
-    name: "Package1",
-    description: "Here is a description",
+    name: "Chocoberry",
+    description: "the favorite package known to candy kind",
     linkUrl: "www.website.com",
     type: "package",
   },
   {
     id: 1,
-    name: "Package1",
-    description: "Here is a description",
+    name: "Jellybean Mayor",
+    description: "Mayor packed code of candy",
     linkUrl: "www.website.com",
     type: "package",
   },
