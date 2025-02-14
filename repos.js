@@ -1,4 +1,4 @@
-import { repos, projects, packages } from "./data.js";
+import { repos } from "./data.js";
 
 // Create a card
 const createCard = (object) => {
@@ -73,7 +73,6 @@ document.querySelector("#search-bar").addEventListener("keyup", search);
 //display cards when the screen loads
 document.addEventListener("DOMContentLoaded", () => {
   displayCards(repos);
-  // displayProjects(projects);
 });
 
-export{ displayInDom }
+export { displayInDom };
