@@ -1,5 +1,30 @@
+* {
+  cursor: none;
+}
+
 body {
   background-color: rgb(0, 0, 83);
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  pointer-events: none;
+  background-image: url("candycursor.png");
+  background-size: cover;
+  display: none;
+}
+
+.peppermint {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9c8a68ea-00bc-4983-949d-d33d4770eea8/d5k94rp-3f0786d8-47e2-4fb9-83ea-80695f128f21.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzljOGE2OGVhLTAwYmMtNDk4My05NDlkLWQzM2Q0NzcwZWVhOFwvZDVrOTRycC0zZjA3ODZkOC00N2UyLTRmYjktODNlYS04MDY5NWYxMjhmMjEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._xJ766ty7JEmSxgmUSCHJDut3h0hAWUw21TWWr4v0i8")
+    no-repeat center center;
+  background-size: contain;
+  opacity: 0;
+  filter: brightness(0.8) contrast(1.2);
 }
 
 #profile {

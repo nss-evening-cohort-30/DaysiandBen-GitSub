@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Packages</title>
   <link
   href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
   rel="stylesheet"
@@ -20,6 +20,8 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
 </head>
 <body>
   <body>
@@ -27,16 +29,16 @@
       <nav class="navbar navbar-expand-lg" id="navTab">
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Overview</a>
+            <a class="nav-link"  href="index.html">Overview</a>
           </li>
           <li class="nav-item">
-            <a id="repo" class="nav-link" href="#">Repo's</a>
+            <a id="repo" class="nav-link" href="repos.html">Repo's</a>
           </li>
           <li class="nav-item">
-            <a id="projects" class="nav-link" href="#">PJ's</a>
+            <a id="projects" class="nav-link" href="projects.html">PJ's</a>
           </li>
           <li class="nav-item">
-            <a id="packages" class="nav-link" href="#">Packages</a>
+            <a id="packages" class="nav-link active" href="#">Packages</a>
           </li>
         </ul>
       </nav>
@@ -179,7 +181,15 @@
           <p class="mx-2 mb-0">About</p>
         </div>
       </div>
+     
+
     </footer>
+    <div id="customCursor" class="custom-cursor"></div>
+    <div class="peppermint" id="peppermint1"></div>
+    <div class="peppermint" id="peppermint2"></div>
+    <div class="peppermint" id="peppermint3"></div>
+    <div class="peppermint" id="peppermint4"></div>
+    <div class="peppermint" id="peppermint5"></div>
   <script
   src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
   integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -192,5 +202,7 @@
 ></script>
 <script type="module" src="data.js"></script>
 <script type="module" src="projects.js"></script>
+<script src="main.js"></script>
+
 </body>
 </html>
