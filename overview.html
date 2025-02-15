@@ -18,7 +18,7 @@
       <div id="navTab">
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="overview.html">Overview</a>
+            <a id="overview" class="nav-link active" aria-current="page" href="#">Overview</a>
           </li>
           <li class="nav-item">
             <a id="repo" class="nav-link" href="repos.html">Repo's</a>
@@ -32,6 +32,23 @@
         </ul>
       </div>
     </header>
+    <main>
+      <form action="/search">
+        <input
+          type="text"
+          name="query"
+          placeholder="Find packages..."
+          id="search-bar"
+        />
+      </form>
+      <div class="container mt-4" id="packages-cnt"></div>
+      <div id="pinned-ct">
+        <h2>Favorites:</h2>
+        <div id="pinned"></div>
+      </div>
+      <div id="customCursor" class="custom-cursor"></div>
+      <div id="allPinned"><h2>Here is some text</h2></div>
+    </main>
     <aside>
       <div id="profile">
         <img
@@ -95,28 +112,12 @@
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxEg09iHLzD198fmUNhIGlBU6PqMuZsStVtQ&s"
           />
         </div>
-        <div class="musicdiv">
-          <button id="music-btn" class="btn">&#119070;</button>
-        </div>
-        <iframe
-          id="adventure-music"
-          class="hide"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/1x_hhxKFdh0?si=YI744oVHkeW_NKO8"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
       </div>
     </aside>
     <main></main>
     <section></section>
 
-    <div id="customCursor" class="custom-cursor"></div>
+    <!-- <div id="customCursor" class="custom-cursor"></div> -->
 
     <div class="peppermint" id="peppermint1"></div>
     <div class="peppermint" id="peppermint2"></div>
@@ -160,11 +161,21 @@
       </div>
     </footer>
     <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="main.js"></script>
+    <script src="repos.js"></script>
+    <script src="projects.js"></script>
+    <script src="packages.js"></script> -->
     <script type="module" src="main.js"></script>
     <script type="module" src="overview.js"></script>
+    <script type="module" src="data.js"></script>
   </body>
 </html>
