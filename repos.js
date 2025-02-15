@@ -49,7 +49,7 @@ const newRepo = (e) => {
     type: "project",
   };
   repos.push(repo);
-  displayCards(repos);
+  displayCards(repos); 
   repoForm.reset();
 };
 
