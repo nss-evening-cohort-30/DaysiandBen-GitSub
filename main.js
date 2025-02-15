@@ -31,3 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: true,
   });
 });
+
+document.getElementById("music-btn").addEventListener("click", function () {
+  const iframe = document.getElementById("adventure-music");
+  iframe.classList.toggle("hide");
+});
