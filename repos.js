@@ -1,4 +1,4 @@
-import { repos, projects, packages } from "./data.js";
+import { repos, favorites } from "./data.js";
 
 // Create a card
 const createCard = (object) => {
@@ -26,6 +26,10 @@ const displayCards = (array) => {
   });
 
   displayInDom("#cards-cnt", content);
+
+  document.querySelectorAll(".rate-btn").forEach((button) => {
+    button.addEventListener("click", favor);
+  });
 };
 
 // Display in DOM utility function
@@ -76,4 +80,38 @@ document.addEventListener("DOMContentLoaded", () => {
   // displayProjects(projects);
 });
 
-export{ displayInDom }
+//favorites
+const displayFavs = (array) => {
+  let content = "";
+  array.forEach((item) => {
+    content += createCard(item);
+  });
+  displayInDom("#pinned", content);
+
+  document.querySelectorAll(".rate-btn").forEach((button) => {
+    button.addEventListener("click", favor);
+  });
+};
+
+const favor = (event) => {
+  const id = parseInt(event.target.getAttribute("data-id"));
+  const repoIndex = repos.findIndex((repo) => repo.id === id);
+  if (repoIndex !== -1) {
+    const repo = repos[repoIndex];
+    repo.pinned = true;
+    favorites.push(repo);
+    repos.splice(repoIndex, 1);
+  } else {
+    const favIndex = favorites.findIndex((repo) => repo.id === id);
+    if (favIndex !== -1) {
+      const repo = favorites[favIndex];
+      repo.pinned = false;
+      repos.push(repo);
+      favorites.splice(favIndex, 1);
+    }
+  }
+  displayCards(repos);
+  displayFavs(favorites);
+};
+
+export { displayInDom };
