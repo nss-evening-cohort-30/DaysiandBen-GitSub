@@ -5,7 +5,7 @@ let repos = [
     description: "First candies in the moon",
     language: "Javascript",
     keywords: ["Javascript", "React", "Hackerthon"],
-    pinned: true,
+    pinned: false,
     type: "repository",
   },
   {
@@ -14,7 +14,7 @@ let repos = [
     description: "Jake teaches flex box",
     language: "Javascript",
     keywords: ["Javascript", "React", "Hackerthon"],
-    pinned: true,
+    pinned: false,
     type: "repository",
   },
   {
@@ -23,7 +23,7 @@ let repos = [
     description: "to do list in the land of Ooo",
     language: "Javascript",
     keywords: ["Javascript", "React", "Hackerthon"],
-    pinned: true,
+    pinned: false,
     type: "repository",
   },
   {
@@ -32,7 +32,7 @@ let repos = [
     description: "Here is a collection of Gumball Guardians",
     language: "Javascript",
     keywords: ["Javascript", "React", "Hackerthon"],
-    pinned: true,
+    pinned: false,
     type: "repository",
   },
 ];
@@ -43,29 +43,34 @@ let projects = [
     name: "Candy Clone Lab",
     description: "Clone your own candy",
     type: "project",
+    pinned: false,
   },
   {
     id: 2,
     name: "Candy Cyber Attacks",
     description: "mysterious sugar trails",
+    pinned: false,
   },
   {
     id: 3,
-    name: "Project3",
-    description: "Here is a description",
+    name: "Dark Magic New School",
+    description: "Teaching a new generation of evil candy people",
     type: "project",
+    pinned: false,
   },
   {
     id: 4,
     name: "Castle reconstruction",
     description: "Rebuild castle from foundations",
     type: "project",
+    pinned: false,
   },
   {
     id: 5,
     name: "Sugar Meltdown",
     description: "Response Plan against the ice King",
     type: "project",
+    pinned: false,
   },
 ];
 
@@ -100,4 +105,6 @@ let packages = [
   },
 ];
 
-export { repos, projects, packages };
+const favorites = [];
+
+export { repos, projects, packages, favorites };
