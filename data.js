@@ -81,6 +81,7 @@ let packages = [
     description: "Dark Arts from the best in all Ooo",
     linkUrl: "www.website.com",
     type: "package",
+    pinned: false,
   },
   {
     id: 1,
@@ -88,6 +89,7 @@ let packages = [
     description: "Alliance against ice King",
     linkUrl: "www.website.com",
     type: "package",
+    pinned: false,
   },
   {
     id: 1,
@@ -95,6 +97,7 @@ let packages = [
     description: "the favorite package known to candy kind",
     linkUrl: "www.website.com",
     type: "package",
+    pinned: false,
   },
   {
     id: 1,
@@ -102,6 +105,7 @@ let packages = [
     description: "Mayor packed code of candy",
     linkUrl: "www.website.com",
     type: "package",
+    pinned: false,
   },
 ];
 

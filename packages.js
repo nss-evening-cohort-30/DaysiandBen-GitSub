@@ -105,7 +105,8 @@ const newPackage = (e) => {
     name: document.querySelector("#name").value,
     description: document.querySelector("#description").value,
     language: "Javascript",
-    type: "package"
+    type: "package",
+    pinned: false,
   };
   packages.push(obj);
   displayPackages(packages);
