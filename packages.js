@@ -65,6 +65,8 @@ const displayInDom = (divID, content) => {
   findDiv.innerHTML = content;
 };
 
+
+
 // Create a card
 const createPkgCard = (object) => {
   // Create keywords list items
@@ -112,6 +114,40 @@ const newPackage = (e) => {
 
 packageForm.addEventListener("submit", newPackage);
 
+const favoritePackage = (event) => {
+  const id = parseInt(event.target.getAttribute("data-id"));
+  const packageIndex = packages.findIndex((item) => item.id === id);
+  if (packageIndex !== -1) {
+    const pack = packages[packageIndex];
+    pack.pinned = true;
+    favorites.push(pack);
+    packages.splice(packageIndex, 1);
+  } else {
+    const favIndex = favorites.findIndex((item) => item.id === id);
+    if (favIndex !== -1) {
+      const pkg = favorites[favIndex];
+      pkg.pinned = false;
+      packages.push(pkg);
+      favorites.splice(favIndex, 1);
+    }
+  }
+  displayPackages(packages);
+  displayFavorites(favorites);
+};
+
+//favorites
+const displayFavorites = (array) => {
+  let content = "";
+  array.forEach((item) => {
+    content += createCard(item);
+  });
+  displayInDom("#pinned", content);
+
+  document.querySelectorAll(".rate-btn").forEach((button) => {
+    button.addEventListener("click", favoritePackage);
+  });
+};
+
 // Search bar
 
 const search = (event) => {
@@ -133,4 +169,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // displayProjects(projects);
 });
 
+
+favoritePackage()
 // export{ displayInDom }
