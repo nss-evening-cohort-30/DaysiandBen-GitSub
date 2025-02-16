@@ -1,9 +1,8 @@
 // import { displayInDom } from "./repos";
 // import { packages } from "./data";
 
-
 // let packageCard = (arr) => {
-//   let domString  = '' 
+//   let domString  = ''
 //   for (item of arr) {
 //     domString += `<div class="card" style="width: 18rem;">
 //   <div class="card-body">
@@ -31,8 +30,6 @@
 
 // const packageForm = document.querySelector("#createPackage")
 
-
-
 // packageForm.addEventListener("submit", newPackage);
 // // const searchPkg = (event) => {
 // //   const eventSearch = event.target.value.toLowerCase();
@@ -44,14 +41,12 @@
 // //   });
 //   displayInDom("#packages-cnt", searchResult)
 
-
 // document.querySelector("#search-bar").addEventListener("keyup", searchPkg);
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   displayInDom("#packages-cnt", packages)
 //   // displayProjects(projects);
 // });
-
 
 // packageCard(packages)
 // newPackage()
@@ -64,8 +59,6 @@ const displayInDom = (divID, content) => {
   const findDiv = document.querySelector(divID);
   findDiv.innerHTML = content;
 };
-
-
 
 // Create a card
 const createPkgCard = (object) => {
@@ -80,8 +73,6 @@ const createPkgCard = (object) => {
     </div>
   </div>`;
 };
-;
-
 const displayPackages = (array) => {
   let content = "";
   array.forEach((item) => {
@@ -89,10 +80,14 @@ const displayPackages = (array) => {
   });
 
   displayInDom("#packages-cnt", content);
+
+  gsap.to(".card", {
+    backgroundColor: "#a90505",
+    color: "#ffffff",
+  });
 };
 
 // Display in DOM utility function
-
 
 //create new repository form
 const packageForm = document.querySelector("#createPackage");
@@ -168,8 +163,11 @@ document.querySelector("#search-bar").addEventListener("keyup", search);
 document.addEventListener("DOMContentLoaded", () => {
   displayPackages(packages);
   // displayProjects(projects);
+  gsap.to(".btn", {
+    backgroundColor: "#5941A9",
+    color: "#E6AF2E",
+  });
 });
 
-
-favoritePackage()
+favoritePackage();
 // export{ displayInDom }

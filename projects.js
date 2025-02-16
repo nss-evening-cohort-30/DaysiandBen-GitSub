@@ -23,6 +23,17 @@ const displayProjects = (array) => {
   document.querySelectorAll(".rate-btn").forEach((button) => {
     button.addEventListener("click", favor);
   });
+
+  gsap.to(".card", {
+    opacity: 1,
+    y: 20,
+    stagger: 0.2,
+    duration: 3,
+    ease: "power1.in",
+    x: 30,
+    backgroundColor: "	#f1d1e3",
+    color: "#43c4da",
+  });
 };
 
 // Display in DOM utility function

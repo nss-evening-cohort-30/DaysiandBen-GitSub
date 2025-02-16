@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  cursor: none;
+  cursor: none;!important
 }
 
 #profile {
@@ -33,7 +33,6 @@
   display: flex;
   flex-direction: column;
   align-content: space-around;
-  border: 1px solid red;
   width: 70%;
   margin-left: 21.5%;
   position: absolute;
@@ -51,7 +50,7 @@ body {
   font-size: 1rem;
 }
 
-#profImg {
+.profImg {
   border-radius: 50%;
   object-fit: cover;
   width: 200px;
@@ -68,7 +67,6 @@ body {
   display: flex;
   flex-direction: column;
   align-content: space-around;
-  border: 1px solid #ff0000;
   width: 70%;
   margin-left: 400px;
   position: fixed;
@@ -113,7 +111,7 @@ input[type="text"] {
 #search-bar {
   border-radius: 4px;
   width: 700px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .card {
@@ -166,8 +164,8 @@ h3 {
   color: #59a694;
 }
 
-::placeholder {
-  color: #f7cd10;
+#search-bar::placeholder {
+  color: #00CC66; 
 }
 
 .custom-cursor {
@@ -178,6 +176,7 @@ h3 {
   background-image: url("candycursor.png");
   background-size: cover;
   display: none;
+  z-index: 999;
 }
 
 .peppermint {

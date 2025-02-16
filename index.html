@@ -35,11 +35,11 @@
     <aside>
       <div id="profile">
         <img
-          id="profImg"
+          class="profImg"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxEg09iHLzD198fmUNhIGlBU6PqMuZsStVtQ&s"
         />
         <div id="bio">
-          <h5>
+          <h5 class="me">
             Greetings! I am Peppermint Butler, the up most diligent and devoted
             allied of Princess Bubblegum. With a deep understanding of dark
             magic and a vast repertoire of arcane knowledge, I ensure the safety
@@ -149,5 +149,21 @@
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/TextPlugin.min.js"></script>
+    <script>
+      // Register the GSAP TextPlugin
+      gsap.registerPlugin(TextPlugin);
+
+      // Typewriter animation for elements with the class 'me'
+      gsap.from(".me", {
+        duration: 10,
+        text: {
+          value:
+            "It is just me Peppermint, the very best 'Butler' this Kingdom has ever seen!...",
+        },
+        ease: "power1.inOut",
+      });
+    </script>
   </body>
 </html>
