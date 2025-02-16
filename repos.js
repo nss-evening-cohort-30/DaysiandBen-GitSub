@@ -123,4 +123,4 @@ const favor = (event) => {
   displayFavs(favorites);
 };
 
-export { displayInDom };
+export { displayInDom, displayFavs };
