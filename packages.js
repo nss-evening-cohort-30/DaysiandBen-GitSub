@@ -117,5 +117,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// favoritePackage()
-// export{ displayInDom }
+export { displayFavorites }
