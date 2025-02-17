@@ -30,6 +30,26 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 10000, // Slowed down the movement
     loop: true,
   });
+
+  gsap.to(".profImg", { duration: 2, rotation: 360 });
+
+  // GSAP animation for footer elements
+  gsap.from("footer p", {
+    opacity: 0,
+    y: 20,
+    stagger: 0.1,
+    duration: 1,
+    ease: "power1.out",
+  });
+
+  gsap.from("#search-bar", {
+    opacity: 0,
+    x: 40,
+    stagger: 0.1,
+    duration: 1,
+    ease: "power1.in",
+    border: "1px solid #ff63ca",
+  });
 });
 
 document.getElementById("music-btn").addEventListener("click", function () {

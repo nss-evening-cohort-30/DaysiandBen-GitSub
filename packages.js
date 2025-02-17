@@ -105,4 +105,11 @@ document.querySelector("#search-bar").addEventListener("keyup", search);
 document.addEventListener("DOMContentLoaded", () => {
   displayPackages(packages);
   // displayProjects(projects);
+  gsap.to(".btn", {
+    backgroundColor: "#5941A9",
+    color: "#E6AF2E",
+  });
 });
+
+// Export functions if needed
+// export { displayInDom };
