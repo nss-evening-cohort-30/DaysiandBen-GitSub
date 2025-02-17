@@ -11,15 +11,10 @@ const displayInDom = (divID, content) => {
 
 
 let displayOverview = () => {
-    displayFavorites()
-    displayFavs()
-    displayFavs()
-
-
-   
+    let content = `<h2>Something something</h2>`
+    displayInDom('#main', content)
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  displayInDom('#main', displayOverview);
-});
+
+document.querySelector('#overview').addEventListener('click', displayOverview)

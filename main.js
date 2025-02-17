@@ -51,3 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
     border: "1px solid #ff63ca",
   });
 });
+
+document.getElementById("music-btn").addEventListener("click", function () {
+  const iframe = document.getElementById("adventure-music");
+  iframe.classList.toggle("hide");
+});

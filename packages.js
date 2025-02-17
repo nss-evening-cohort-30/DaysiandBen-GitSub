@@ -26,6 +26,20 @@ const displayPackages = (array) => {
 
   displayInDom("#packages-cnt", content);
 
+  // Add event listeners to each star button being created
+  document.querySelectorAll(".rate-btn").forEach((button) => {
+    button.addEventListener("click", favoritePackage);
+  });
+};
+
+// Display favorites
+const displayFavorites = (array) => {
+  let content = "";
+  array.forEach((item) => {
+    content += createPkgCard(item);
+  });
+  displayInDom("#pinned", content);
+
   document.querySelectorAll(".rate-btn").forEach((button) => {
     button.addEventListener("click", favoritePackage);
   });
@@ -51,19 +65,6 @@ const newPackage = (e) => {
 };
 
 packageForm.addEventListener("submit", newPackage);
-
-// Display favorites
-const displayFavorites = (array) => {
-  let content = "";
-  array.forEach((item) => {
-    content += createPkgCard(item);
-  });
-  displayInDom("#pinned", content);
-
-  document.querySelectorAll(".rate-btn").forEach((button) => {
-    button.addEventListener("click", favoritePackage);
-  });
-};
 
 const favoritePackage = (event) => {
   const id = parseInt(event.target.getAttribute("data-id"));
