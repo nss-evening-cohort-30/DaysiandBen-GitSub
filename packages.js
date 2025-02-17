@@ -1,16 +1,12 @@
-
-
 import { packages, favorites } from "./data.js";
+
 const displayInDom = (divID, content) => {
   const findDiv = document.querySelector(divID);
   findDiv.innerHTML = content;
 };
 
-
-
 // Create a card
 const createPkgCard = (object) => {
-  // Create keywords list items
   return `
   <div class="card" style="width: 40rem; gap:20px;">
     <div class="card-body">
@@ -21,7 +17,6 @@ const createPkgCard = (object) => {
     </div>
   </div>`;
 };
-;
 
 const displayPackages = (array) => {
   let content = "";
@@ -30,20 +25,32 @@ const displayPackages = (array) => {
   });
 
   displayInDom("#packages-cnt", content);
+
+  // Add event listeners to each star button being created
   document.querySelectorAll(".rate-btn").forEach((button) => {
     button.addEventListener("click", favoritePackage);
   });
 };
 
-// Display in DOM utility function
+// Display favorites
+const displayFavorites = (array) => {
+  let content = "";
+  array.forEach((item) => {
+    content += createPkgCard(item);
+  });
+  displayInDom("#pinned", content);
 
+  document.querySelectorAll(".rate-btn").forEach((button) => {
+    button.addEventListener("click", favoritePackage);
+  });
+};
 
-//create new repository form
+// Create new repository form
 const packageForm = document.querySelector("#createPackage");
 
 const newPackage = (e) => {
   e.preventDefault();
-  //create new repo
+  // Create new repo
   const obj = {
     id: packages.length + 1,
     name: document.querySelector("#name").value,
@@ -58,20 +65,6 @@ const newPackage = (e) => {
 };
 
 packageForm.addEventListener("submit", newPackage);
-
-
-//favorites
-const displayFavorites = (array) => {
-  let content = "";
-  array.forEach((item) => {
-    content += createPkgCard(item);
-  });
-  displayInDom("#pinned", content);
-
-  document.querySelectorAll(".rate-btn").forEach((button) => {
-    button.addEventListener("click", favoritePackage);
-  });
-};
 
 const favoritePackage = (event) => {
   const id = parseInt(event.target.getAttribute("data-id"));
@@ -94,9 +87,7 @@ const favoritePackage = (event) => {
   displayFavorites(favorites);
 };
 
-
 // Search bar
-
 const search = (event) => {
   const eventSearch = event.target.value.toLowerCase();
   const searchResult = packages.filter((item) => {
@@ -110,12 +101,10 @@ const search = (event) => {
 
 document.querySelector("#search-bar").addEventListener("keyup", search);
 
-//display cards when the screen loads
+// Display cards when the screen loads
 document.addEventListener("DOMContentLoaded", () => {
   displayPackages(packages);
   // displayProjects(projects);
 });
 
 
-// favoritePackage()
-// export{ displayInDom }

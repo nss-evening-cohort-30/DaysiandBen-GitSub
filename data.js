@@ -84,7 +84,7 @@ let packages = [
     pinned: false,
   },
   {
-    id: 1,
+    id: 2,
     name: "Cupcake Pack",
     description: "Alliance against ice King",
     linkUrl: "www.website.com",
@@ -92,7 +92,7 @@ let packages = [
     pinned: false,
   },
   {
-    id: 1,
+    id: 3,
     name: "Chocoberry",
     description: "the favorite package known to candy kind",
     linkUrl: "www.website.com",
@@ -100,7 +100,7 @@ let packages = [
     pinned: false,
   },
   {
-    id: 1,
+    id: 4,
     name: "Jellybean Mayor",
     description: "Mayor packed code of candy",
     linkUrl: "www.website.com",

@@ -56,6 +56,7 @@ body {
   object-fit: cover;
   width: 200px;
   height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .sponsor {
@@ -231,7 +232,37 @@ footer p {
   justify-content: space-around;
 }
 
+#music-btn {
+  font-size: 2.5rem;
+  color: #ff0000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.musicdiv {
+  margin-top: 40px;
+  background-image: url("https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/10/10-best-songs-in-adventure-time-ranked.jpg");
+  background-size: cover;
+  height: 100px;
+  width: 200px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.3);
+  border-color: #ffba1e;
+  border-width: 3px;
+  border-style: solid;
+}
+.musicdiv:hover {
+  border-color: #ff0081;
+}
+
+.hide {
+  display: none;
+}
+
 h2 {
   color: white;
   /* border: 1px solid red; */
 }
+
