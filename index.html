@@ -114,8 +114,19 @@
       </div>
       </div>
     </aside>
-    <main></main>
-    <section></section>
+    <main>
+      <div class="container mt-4" id="cards-cnt"></div>
+    </main>
+    <section>
+      <form id="createProject" class="p-4"> 
+        <div class="mb-3"> 
+          <label for="name" class="form-label">Project Board Name</label> 
+          <input type="text" class="form-control" id="name" placeholder="" required /> <div class="mb-3"> 
+          <label for="description" class="form-label" >Description (optional)</label > <input type="text" class="form-control" id="description" placeholder="" /> </div>
+          <button type="submit" id="btn-create" class="btn btn-success"> Create Project </button> 
+  </div>
+   </form> 
+    </section>
 
     <div id="customCursor" class="custom-cursor"></div>
 
@@ -169,4 +180,3 @@
     <script type="module" src="overview.js"></script>
   </body>
 </html>
-
