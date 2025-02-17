@@ -35,11 +35,11 @@
     <aside>
       <div id="profile">
         <img
-          id="profImg"
+          class="profImg"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxEg09iHLzD198fmUNhIGlBU6PqMuZsStVtQ&s"
         />
         <div id="bio">
-          <h5>
+          <h5 class="me">
             Greetings! I am Peppermint Butler, the up most diligent and devoted
             allied of Princess Bubblegum. With a deep understanding of dark
             magic and a vast repertoire of arcane knowledge, I ensure the safety
@@ -77,6 +77,7 @@
           <h3>Sponsors</h3>
           <img
             class="sponsor"
+
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxEg09iHLzD198fmUNhIGlBU6PqMuZsStVtQ&s"
           /><img
             class="sponsor"
@@ -113,8 +114,19 @@
       </div>
       </div>
     </aside>
-    <main></main>
-    <section></section>
+    <main>
+      <div class="container mt-4" id="cards-cnt"></div>
+    </main>
+    <section>
+      <form id="createProject" class="p-4"> 
+        <div class="mb-3"> 
+          <label for="name" class="form-label">Project Board Name</label> 
+          <input type="text" class="form-control" id="name" placeholder="" required /> <div class="mb-3"> 
+          <label for="description" class="form-label" >Description (optional)</label > <input type="text" class="form-control" id="description" placeholder="" /> </div>
+          <button type="submit" id="btn-create" class="btn btn-success"> Create Project </button> 
+  </div>
+   </form> 
+    </section>
 
     <div id="customCursor" class="custom-cursor"></div>
 

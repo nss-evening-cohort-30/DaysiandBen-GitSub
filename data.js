@@ -109,6 +109,23 @@ let packages = [
   },
 ];
 
-const favorites = [];
+const favorites = [
+  {
+    id: 1,
+    name: "Candy Town",
+    description: "local candy mall",
+    language: "Javascript",
+    type: "project",
+    pinned: true,
+  },
+  {
+    id: 2,
+    name: "Vamp Townhall",
+    description: "local music venue",
+    language: "Javascript",
+    type: "project",
+    pinned: true,
+  },
+];
 
 export { repos, projects, packages, favorites };

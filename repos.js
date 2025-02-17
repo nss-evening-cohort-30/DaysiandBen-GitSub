@@ -30,6 +30,15 @@ const displayCards = (array) => {
   document.querySelectorAll(".rate-btn").forEach((button) => {
     button.addEventListener("click", favor);
   });
+
+  gsap.from(".card", {
+    opacity: 0,
+    y: 20,
+    stagger: 0.4,
+    duration: 5,
+    ease: "power1.out",
+    x: 30,
+  });
 };
 
 // Display in DOM utility function
