@@ -21,6 +21,7 @@ Watch the walkthrough video on Loom:
 
 Check out the live application on Netlify:
 [Deployed App](//Netlify)
+https://willowy-dragon-4920e7.netlify.app/overview
 
 ## Lessons Learned
 
